@@ -6,5 +6,5 @@ services:
     container_name: hexagonal-arch-tests
     ports:
       - "9000:9000"
-    volumes: 
+    volumes:
       - .:/go/src/
