@@ -68,7 +68,7 @@ func (p *Product) IsValid() (bool, error) {
 	}
 
 	if p.Status != ENABLED && p.Status != DISABLED {
-		return false, errors.New("status must be ENABLED or DISABLED")
+		return false, errors.New("status must be enabled or disabled")
 	}
 
 	if p.Price < 0 {
